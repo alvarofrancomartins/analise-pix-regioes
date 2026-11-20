@@ -3,6 +3,8 @@
 Análise autocontida que compara as 5 regiões do Brasil quanto ao **número** e ao
 **valor** de Pix recebidos por pessoa física (PF), per capita, ao longo do tempo.
 
+Os principais resultados estão resumidos em [results.md](results.md).
+
 ## O que gera
 
 `output/pix_regioes_recebidos.png`, dois subplots lado a lado:
@@ -26,7 +28,7 @@ pip install -r requirements.txt
 python pix_regioes_recebidos.py
 ```
 
-Regera `output/pix_regioes_recebidos.png`.
+Regera `output/pix_regioes_recebidos.png` e `output/pix_regioes_recebidos.csv`.
 
 ## Dados (crus, sem transformação)
 

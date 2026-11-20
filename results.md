@@ -1,24 +1,18 @@
-# Pix recebidos por PF per capita: resultados
+# Receber mais Pix não é receber mais dinheiro
 
-Valores de outubro de 2026, per capita e por mês.
+Analisamos os Pix recebidos por pessoa física em todo o Brasil desde o
+lançamento, em novembro de 2020, e cruzamos com dados do IBGE para
+comparar as cinco regiões per capita, mês a mês.
 
-**1. O Norte é o 1º em número de Pix per capita, mas só o 4º em valor.**
+**A ordem por valor não mudou em seis anos**. O número de Pix per capita por mês é maior no Norte (22,1) e no Nordeste (19,8), intermediário no Centro-Oeste (16,7) e no Sudeste (16,3), e menor no Sul (12,3). Por outro lado, o valor per capita é maior no Centro-Oeste (7,2k reais), seguido de Sudeste (5,9k), Sul (5,13k), Norte (5,06k) e Nordeste (4,4k). 
 
-O Norte tem 22 Pix per capita por mês, o maior do país, porém fica apenas em
-4º no valor. O Sul tem o menor número (12 Pix per capita por mês) e fica em 3º
-no valor. A diferença está no valor médio de cada transação: R\$ 229 no Norte,
-R\$ 418 no Sul.
+**O Norte lidera em número, mas é só o 4º em valor.** O Sul é o último em
+número e o 3º em valor. A diferença está no valor médio de cada transação:
+229 reais no Norte, 418 no Sul.
 
-**2. A ordem por valor não mudou em seis anos.**
+**A ordem por número é quase o inverso da do valor**, e se mantém assim desde
+2022.
 
-O valor por habitante é o número de Pix vezes o valor médio de cada transação.
-No Sul, por exemplo: 12,3 Pix × R\$ 418 ≈ R\$ 5.133 por habitante.
+---
 
-De dezembro de 2020 a outubro de 2026, a classificação foi sempre a mesma:
-1º Centro-Oeste (R\$ 7.174), 2º Sudeste (R\$ 5.877), 3º Sul (R\$ 5.133),
-4º Norte (R\$ 5.060), 5º Nordeste (R\$ 4.403).
-
-**3. A ordem por número é quase o inverso da do valor.**
-
-Desde 2022, a classificação se mantém: 1º Norte (22,1), 2º Nordeste (19,8),
-3º Centro-Oeste (16,7), 4º Sudeste (16,3), 5º Sul (12,3).
+Dados abertos do Banco Central do Brasil e do IBGE, analisados com Python.
