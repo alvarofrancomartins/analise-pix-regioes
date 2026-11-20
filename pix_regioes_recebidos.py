@@ -103,24 +103,26 @@ for ax, g, metrica in [(axes[0], gc, "count"), (axes[1], gv, "value")]:
     ax.xaxis.set_major_locator(mdates.YearLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
     ax.tick_params(colors=INK, labelsize=16)
+    ax.set_xlabel("Data", fontsize=18, color=INK)
     for sp in ("top", "right"):
         ax.spines[sp].set_visible(False)
     for sp in ("left", "bottom"):
         ax.spines[sp].set_color("#c3c2b7")
     if metrica == "value":
         ax.yaxis.set_major_formatter(mtick.FuncFormatter(fmt_brl))
-        ax.set_ylabel("Valor recebido (R$) per capita / mês", fontsize=16, color=INK)
-        ax.set_title("Valor (IQR entre municípios)", fontsize=15,
+        ax.set_title("Valor em R$", fontsize=15,
                      fontweight="bold", color=INK, loc="left")
     else:
         ax.yaxis.set_major_locator(mtick.MaxNLocator(integer=True))
-        ax.set_ylabel("Pix recebidos per capita / mês", fontsize=16, color=INK)
-        ax.set_title("Número (IQR entre municípios)", fontsize=15,
+        ax.set_title("Número", fontsize=15,
                      fontweight="bold", color=INK, loc="left")
 
-fig.suptitle("Pix recebidos por PF per capita, por região",
+fig.suptitle("Pix recebidos por Pessoa Física per capita",
              fontsize=20, fontweight="bold", color=INK, y=1.03)
-fig.tight_layout(rect=(0, 0, 1, 1.0))
+fig.tight_layout(rect=(0, 0.05, 1, 1.0))
+
+fig.text(0.5, 0.02, "Barras sombreadas: intervalo interquartílico (P25-P75) entre municípios.",
+         ha="center", va="center", fontsize=11, color=INK)
 
 out = HERE / "output" / "pix_regioes_recebidos.png"
 out.parent.mkdir(parents=True, exist_ok=True)
