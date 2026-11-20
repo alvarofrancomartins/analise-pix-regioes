@@ -109,13 +109,13 @@ for ax, g, metrica in [(axes[0], gc, "count"), (axes[1], gv, "value")]:
         ax.spines[sp].set_color("#c3c2b7")
     if metrica == "value":
         ax.yaxis.set_major_formatter(mtick.FuncFormatter(fmt_brl))
-        ax.set_ylabel("Valor recebido (R$) / per capita / mês", fontsize=16, color=INK)
-        ax.set_title("Valor (per capita, IQR entre municípios)", fontsize=15,
+        ax.set_ylabel("Valor recebido (R$) per capita / mês", fontsize=16, color=INK)
+        ax.set_title("Valor (IQR entre municípios)", fontsize=15,
                      fontweight="bold", color=INK, loc="left")
     else:
         ax.yaxis.set_major_locator(mtick.MaxNLocator(integer=True))
-        ax.set_ylabel("Pix recebidos / per capita / mês", fontsize=16, color=INK)
-        ax.set_title("Número (per capita, IQR entre municípios)", fontsize=15,
+        ax.set_ylabel("Pix recebidos per capita / mês", fontsize=16, color=INK)
+        ax.set_title("Número (IQR entre municípios)", fontsize=15,
                      fontweight="bold", color=INK, loc="left")
 
 fig.suptitle("Pix recebidos por PF per capita, por região",
@@ -124,7 +124,7 @@ fig.tight_layout(rect=(0, 0, 1, 1.0))
 
 out = HERE / "output" / "pix_regioes_recebidos.png"
 out.parent.mkdir(parents=True, exist_ok=True)
-plt.savefig(out, dpi=150, bbox_inches="tight", facecolor="white")
+plt.savefig(out, dpi=300, bbox_inches="tight", facecolor="white")
 plt.close()
 print(f"salvo {out}")
 
