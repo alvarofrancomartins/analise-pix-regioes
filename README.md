@@ -3,6 +3,8 @@
 Análise autocontida que compara as 5 regiões do Brasil quanto ao **número** e ao
 **valor** de Pix recebidos por pessoa física (PF), per capita, ao longo do tempo.
 
+![Número e valor de Pix recebidos por PF per capita, por região](output/pix_regioes_recebidos.png)
+
 Os principais resultados estão resumidos em [results.md](results.md).
 
 ## O que gera
